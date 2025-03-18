@@ -1,3 +1,79 @@
+# An Integrated Landscape of Zinc Finger Proteins and Immune Infiltration in Liver Cancer
 
-An Integrated Landscape Hallmark of Prognostic and Therapeutic Significance Related to Zinc Finger Proteins and Immune Infiltration in Liver CancerAn Integrated Landscape Hallmark of Prognostic and Therapeutic Significance Related to Zinc Finger Proteins and Immune Infiltration in Liver Cancer
-Liver cancer, particularly hepatocellular carcinoma (HCC), is a leading cause of cancer-related mortality worldwide. Recent studies have highlighted the importance of zinc finger proteins in cancer development, functioning as crucial regulators of DNA repair, gene expression, and cellular differentiation. Similarly, the immune infiltration within the tumor microenvironment (TME) has emerged as a critical determinant of cancer progression and response to therapy. This project proposes an integrative analysis to explore the combined effects of zinc finger protein expression and immune cell infiltration in liver cancer, aiming to identify novel prognostic markers and therapeutic targets.Liver cancer, particularly hepatocellular carcinoma (HCC), is a leading cause of cancer-related mortality worldwide. Recent studies have highlighted the importance of zinc finger proteins in cancer development, functioning as crucial regulators of DNA repair, gene expression, and cellular differentiation. Similarly, the immune infiltration within the tumor microenvironment (TME) has emerged as a critical determinant of cancer progression and response to therapy. This project proposes an integrative analysis to explore the combined effects of zinc finger protein expression and immune cell infiltration in liver cancer, aiming to identify novel prognostic markers and therapeutic targets.
+## Introduction
+
+Liver cancer, particularly hepatocellular carcinoma (HCC), is a leading cause of cancer-related mortality worldwide. Zinc finger proteins (ZFPs) play crucial roles in DNA repair, gene regulation, and cellular differentiation, making them key players in oncogenesis. Simultaneously, the tumor microenvironment (TME) and immune cell infiltration influence cancer progression and response to therapies.
+
+This study integrates bioinformatics and machine learning approaches to analyze the combined effects of ZFP expression and immune infiltration in HCC, identifying potential prognostic markers and therapeutic targets.
+
+## Workflow
+![Project Workflow (Flowchart) - visual selection](https://github.com/user-attachments/assets/1ad793fb-7ee7-4211-ac2b-4150ba0c35d7)
+
+### Key Insights from the Study
+
+**ZFPs as Prognostic Markers**
+
+Several ZFPs were significantly associated with overall survival (OS) and progression-free survival (PFS).
+  
+**ZFP Expression & Immune Infiltration**
+
+Higher expression of certain ZFPs correlates with increased immune infiltration, potentially impacting response to immunotherapy.
+
+**Functional Pathways**
+
+Enrichment analysis revealed that differentially expressed ZFPs are involved in:
+
+1. Cell cycle regulation
+2. Apoptosis pathways
+3. DNA damage repair mechanisms
+
+**Risk Model Performance**
+
+The LASSO Cox model effectively stratified patients into high-risk and low-risk groups, with a significant difference in survival.
+
+**Therapeutic Potential**
+
+Drug sensitivity analysis suggested that specific ZFPs might serve as targets for novel anti-cancer therapies.
+
+## Installation & Usage
+
+**1. Clone the Repository**
+
+git clone https://github.com/your-repo/zfp-immune-liver-cancer.git
+
+cd zfp-immune-liver-cancer
+
+**2. Install Dependencies**
+
+pip install -r requirements.txt
+
+**3. Run the Analysis**
+
+(A) Preprocessing & Differential Expression Analysis
+
+python preprocess_data.py --dataset tcga
+
+(B) Survival Analysis
+
+python survival_analysis.py --gene ZFP1
+
+(C) Immune Infiltration Analysis
+
+python immune_analysis.py --method estimate
+
+(D) Risk Model & Prediction
+
+python risk_model.py --train tcga --test geo
+
+## Results & Visualization
+
+The results of this study are visualized using:
+
+1. Kaplan-Meier survival curves
+2. Heatmaps of differentially expressed ZFPs
+3. Correlation plots between ZFP expression and immune infiltration
+4. Risk stratification plots
+
+## Conclusion
+
+This integrative analysis provides valuable insights into the prognostic and therapeutic significance of ZFPs and immune infiltration in liver cancer. The findings suggest that targeting ZFPs in combination with immunotherapy may improve treatment efficacy. The risk model developed in this study holds promise for clinical applications in patient stratification and personalized therapy.
