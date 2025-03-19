@@ -35,36 +35,6 @@ The LASSO Cox model effectively stratified patients into high-risk and low-risk 
 
 Drug sensitivity analysis suggested that specific ZFPs might serve as targets for novel anti-cancer therapies.
 
-## Installation & Usage
-
-**1. Clone the Repository**
-
-git clone https://github.com/your-repo/zfp-immune-liver-cancer.git
-
-cd zfp-immune-liver-cancer
-
-**2. Install Dependencies**
-
-pip install -r requirements.txt
-
-**3. Run the Analysis**
-
-(A) Preprocessing & Differential Expression Analysis
-
-python preprocess_data.py --dataset tcga
-
-(B) Survival Analysis
-
-python survival_analysis.py --gene ZFP1
-
-(C) Immune Infiltration Analysis
-
-python immune_analysis.py --method estimate
-
-(D) Risk Model & Prediction
-
-python risk_model.py --train tcga --test geo
-
 ## Results & Visualization
 
 The results of this study are visualized using:
